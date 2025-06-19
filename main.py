@@ -280,8 +280,8 @@ if __name__ == "__main__":
         kg.import_ship_port_visits(visits_file)
         kg.create_company_ship_relationships(ships_file, companies_file)
         
-        # 示例：查找从上海港到鹿特丹港的最优航线
-        optimal_route = kg.find_optimal_route("HKHKG", "USHOU")
+        # 示例：查找从韶关港到纽约港的最优航线
+        optimal_route = kg.find_optimal_route("CNSHA", "USNYC")
         
     finally:
         kg.close()
